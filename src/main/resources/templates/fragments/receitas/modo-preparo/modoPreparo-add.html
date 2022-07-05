@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+
+	<!-- Modal -->
+	<div class="modal fade" id="modal-modoPreparo-add" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalCenterTitle" aria-hidden="true" th:fragment="modal-modoPreparo-add">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Nova etapa de preparo</h5>
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form id="form-edit-promo" action="#">					
+						<div>
+							<div class="form-group row">
+								<label for="add_etapaPreparo" class="col-sm-3 col-form-label">Etapa de preparo</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control"  id="add_etapaPreparo"
+										placeholder="Assar por 30 minutos"    />
+									<div id="error-etapaPreparo"></div>
+								</div>
+							</div>
+							
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer hero-text-tablecell">
+					<input type="submit" value="Cancelar" class="btn btn-secondary"	data-dismiss="modal"></input>
+					<input type="submit" value="Confirmar" id="btn-modoPreparo-add-modal" ></input>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

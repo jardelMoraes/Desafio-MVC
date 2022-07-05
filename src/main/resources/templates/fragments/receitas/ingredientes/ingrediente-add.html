@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+
+	<!-- Modal -->
+	<div class="modal fade" id="modal-ingrediente-add" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalCenterTitle" aria-hidden="true" th:fragment="modal-ingrediente-add">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Novo ingrediente</h5>
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form id="form-add-ingrediente" action="#">					
+						<div>
+							<div class="form-group row">
+								<label for="add_descricao" class="col-sm-2 col-form-label">Descrição</label>
+								<div class="col-sm-10" id="add_descricao_input">
+									<input type="text" class="form-control"  id="add_descricao"
+										placeholder="2 colheres de sopa de chocolate"    />
+									<div id="error-descricao"></div>
+								</div>
+							</div>
+							
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer hero-text-tablecell">
+					<input type="submit" value="Cancelar" class="btn btn-secondary"	data-dismiss="modal"></input>
+					<input type="submit" value="Confirmar" id="btn-ingrediente-add-modal" ></input>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
